@@ -81,8 +81,9 @@ function load_mailbox(mailbox) {
       console.log(emails.length)
 
       for (let email in emails) {
+        
         let div = document.createElement('div');
-        div.innerHTML = email.sender
+        div.innerHTML = email.sender;
         document.getElementById('emails-view').appendChild(div);
 
       }
